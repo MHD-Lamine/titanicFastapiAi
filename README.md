@@ -62,4 +62,9 @@ http://127.0.0.1:8000/docs
 ```
 
 
+## Live API
+
+https://titanicfastapiai.onrender.com/docs
+
+
 

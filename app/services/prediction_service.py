@@ -1,11 +1,18 @@
+from pathlib import Path
 import joblib
 import numpy as np
 
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+
+model_path = BASE_DIR / "model" / "titanic_model.pkl"
+
+imputer_path = BASE_DIR / "model" / "imputer.pkl"
+
 # Charger modèle
-model = joblib.load("model/titanic_model.pkl")
+model = joblib.load(model_path)
 
 # Charger imputer
-imputer = joblib.load("model/imputer.pkl")
+imputer = joblib.load(imputer_path)
 
 def predict_survival(data):
 
